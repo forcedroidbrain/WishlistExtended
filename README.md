@@ -1,0 +1,94 @@
+# Wishlist Extended
+Wishlist Extended is a mod for SPT that expands the built-in auto-wishlist system with additional customization options.
+It allows you to control which crafts and hideout upgrades are automatically wishlisted, and also adds support for automatically wishlisting items required for barters.
+
+## Installation
+1. Make sure that both SPT Client and SPT Server are not running
+2. Head to [releases page](https://github.com/danx91/WishlistExtended/releases)
+3. Download correct version for your SPT
+4. Open zip file
+5. Drag and drop `BepInEx` and `SPT` folders to your SPT directory
+6. Start server and client and make sure that mod is working
+
+## Building from source
+To build the project from source, follow these steps:
+1. Clone or download this repository
+```
+git clone https://github.com/danx91/WishlistExtended.git
+```
+*(Alternatively, download the ZIP and extract it.)*
+2. Download or clone the required [Common Library](https://github.com/danx91/SPT-ZGFueDkxCommonLibrary)
+```
+git clone https://github.com/danx91/SPT-ZGFueDkxCommonLibrary.git
+```
+Place it in a directory of your choice.
+3. Adjust project references
+Update the .csproj files to ensure that project and/or assembly references correctly point to the Common Library and SPT binaries location on your system.
+4. Build the solution
+Open the solution in Visual Studio and build it, or run:
+```
+dotnet build
+```
+
+## Config
+
+### Client config
+You can access config while in-game by pressing `F12` key and then selecting `ZGFueDkx-WishlistExtended` tab
+
+![config menu](/images/settings.png)
+
+### General
+* **Hideout crafting wishlist mode** - Specifies which crafts should be wishlisted
+  * **Disabled** - don't include any crafts
+  * **Favorite** - include only favorite craftsdon't include any crafts
+  * **Current** - include all currently available crafts
+  * **All** - include all crafts (even future ones)
+* **Hideout upgrades wishlist mode** - Specifies which hideout upgrades should be wishlisted
+  * **Disabled** - don't include any upgrades
+  * **Current** - include all currently available upgrades
+  * **ExcludeLocked** - same as current but exclude upgrades with missing conditions
+  * **All** - include all hideout upgrades (even future ones)
+* **Include barters** - Whether or not to include barters. Mod must be installed on the server for barters wishlist!
+* **Barter priority** - Whether barters should be prioritized over hideout. Only affects displayed icon
+* **Show amount of items in stash** - Whether total amount of items in stash should be displayed in the tooltip
+* **In-Raid only** - Whether the auto-generated wishlist should work only in raid. Manual wishlist will work regardless
+
+### Tooltips
+* **Tooltip mode** - Defines the behavior of tooltip
+  * **Disabled** - no wishlist details in the tooltip
+  * **Always** - no binds, everythig is shown
+  * **Hide** - don't show anything, use 'Show all' bind to show
+  * **Cycle** - only one category, use 'Cycle tooltip' bind to change, use 'Show all' bind to show all
+  * **HideFuture** - hide future crafts/modules, use 'Show all' bind to show them
+* **Show all bind** - Shows info hidden by currently selected 'Tooltip mode'
+* **Cycle tooltip bind** - When pressed, ctagory displayed in tooltip is changed (Cycle tooltip mode only)
+### Colors
+* **Current crafts color** - Color of current crafts in tooltip
+* **Favorite crafts color** - Color of favorite crafts in tooltip
+* **Future crafts color** - Color of future crafts in tooltip
+* **Current hideout upgrades color** - Color of current hideout upgrades in tooltip
+* **Future hideout upgrades color** - Color of future hideout upgrades in tooltip
+* **Barters color** - Color of barters in tooltip
+### Loose Loot
+* **Loose loot affix mode** - Specifies how to add the affix to loose loot names
+  * **Disabled** - do nothing
+  * **Prefix** - show the affix before the item name
+  * **Suffix** - show the affix after the item name
+* **Loose loot color mode** - Specifies how loose loot names will be colored
+  * **Disabled** - do nothing
+  * **Name** - set the color of the item name
+  * **Affix** - set the color of the affix
+  * **Both** - set the color of both the item name and the affix
+* **Loose loot color** - Color of the item name (only in Color mode)
+* **Loose loot affix** - Affix to show next to the item name when enabled
+
+## License
+Copyright © 2025 danx91 (aka ZGFueDkx)
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
+
+If you believe that this software infringes your or someone else's copyrights, please feel free to contact me via Discord (**danx91**) so we can try to resolve the issue amicably.

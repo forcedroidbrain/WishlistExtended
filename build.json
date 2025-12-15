@@ -1,0 +1,19 @@
+{
+	"info":{
+		"name": "wishlistextended",
+		"version": "1.0.0",
+		"spt": "4.0"
+	},
+	"dest": {
+		"client": "BepInEx/plugins/WishlistExtended/",
+		"server": "SPT/user/mods/WishlistExtended/"
+	},
+	"files": {
+		"WishlistExtendedServer/bin/Release/net9.0/WishlistExtended-Server.dll": "server",
+		"WishlistExtendedClient/bin/Release/netstandard2.1/WishlistExtended-Client.dll": "client",
+		"WishlistExtendedClient/locales": "client"
+	},
+	"ignore": [
+		"**/*.md"
+	]
+}
