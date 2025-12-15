@@ -1,12 +1,8 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
-using EFT.UI;
-using HarmonyLib;
 using SPT.Reflection.Patching;
-using System;
 using System.IO;
 using System.Reflection;
-using UnityEngine;
 using WishlistExtended.Config;
 
 namespace WishlistExtended

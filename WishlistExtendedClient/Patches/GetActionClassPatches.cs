@@ -17,7 +17,7 @@ namespace WishlistExtended.Patches
         [PatchPrefix]
         private static void Prefix(GamePlayerOwner owner, Item rootItem, ref string lootItemName)
         {
-            if(rootItem is not InventoryEquipment && owner.Player.HandsController.SupportPickup())
+            if (rootItem is not InventoryEquipment && owner.Player.HandsController.SupportPickup())
             {
                 LooseLootService.ApplyWishlistText(rootItem.TemplateId, ref lootItemName);
             }

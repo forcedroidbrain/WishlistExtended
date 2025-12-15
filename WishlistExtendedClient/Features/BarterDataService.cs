@@ -27,10 +27,11 @@ namespace WishlistExtended.Features
                 return;
             }
             string? response = null;
-            try {
+            try
+            {
                 response = RequestHandler.GetJson("/wishlist-extended/barters");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Plugin.LogSource?.LogError("Error loading barters");
                 Plugin.LogSource?.LogError(ex.ToString());

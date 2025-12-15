@@ -319,7 +319,7 @@ namespace WishlistExtended.Features
                     continue;
                 }
 
-                if(upgrade.IsFuture)
+                if (upgrade.IsFuture)
                 {
                     AppendArea(
                         futureAreas,
