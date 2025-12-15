@@ -2,6 +2,11 @@
 Wishlist Extended is a mod for SPT that expands the built-in auto-wishlist system with additional customization options.
 It allows you to control which crafts and hideout upgrades are automatically wishlisted, and also adds support for automatically wishlisting items required for barters.
 
+A more detailed description and screenshots are available on [SPT Forge](https://forge.sp-tarkov.com/mod/2500/wishlist-extended).
+
+## Looking for translators
+I'm looking for people who are willing to provide translation for this mod. If you want to contribute to this mod by traslating it, please head to the [locales](/WishlistExtendedClient/locales/) directory in `WishlistExtendedClient` and follow instructions inside `README.md` file.
+
 ## Installation
 1. Make sure that both SPT Client and SPT Server are not running
 2. Head to [releases page](https://github.com/danx91/WishlistExtended/releases)
@@ -17,13 +22,16 @@ To build the project from source, follow these steps:
 git clone https://github.com/danx91/WishlistExtended.git
 ```
 *(Alternatively, download the ZIP and extract it.)*
+
 2. Download or clone the required [Common Library](https://github.com/danx91/SPT-ZGFueDkxCommonLibrary)
 ```
 git clone https://github.com/danx91/SPT-ZGFueDkxCommonLibrary.git
 ```
 Place it in a directory of your choice.
+
 3. Adjust project references
 Update the .csproj files to ensure that project and/or assembly references correctly point to the Common Library and SPT binaries location on your system.
+
 4. Build the solution
 Open the solution in Visual Studio and build it, or run:
 ```
@@ -37,10 +45,10 @@ You can access config while in-game by pressing `F12` key and then selecting `ZG
 
 ![config menu](/images/settings.png)
 
-### General
+#### General
 * **Hideout crafting wishlist mode** - Specifies which crafts should be wishlisted
   * **Disabled** - don't include any crafts
-  * **Favorite** - include only favorite craftsdon't include any crafts
+  * **Favorite** - include only favorite crafts
   * **Current** - include all currently available crafts
   * **All** - include all crafts (even future ones)
 * **Hideout upgrades wishlist mode** - Specifies which hideout upgrades should be wishlisted
@@ -52,24 +60,23 @@ You can access config while in-game by pressing `F12` key and then selecting `ZG
 * **Barter priority** - Whether barters should be prioritized over hideout. Only affects displayed icon
 * **Show amount of items in stash** - Whether total amount of items in stash should be displayed in the tooltip
 * **In-Raid only** - Whether the auto-generated wishlist should work only in raid. Manual wishlist will work regardless
-
-### Tooltips
+#### Tooltips
 * **Tooltip mode** - Defines the behavior of tooltip
   * **Disabled** - no wishlist details in the tooltip
-  * **Always** - no binds, everythig is shown
+  * **Always** - no binds, everything is shown
   * **Hide** - don't show anything, use 'Show all' bind to show
   * **Cycle** - only one category, use 'Cycle tooltip' bind to change, use 'Show all' bind to show all
   * **HideFuture** - hide future crafts/modules, use 'Show all' bind to show them
 * **Show all bind** - Shows info hidden by currently selected 'Tooltip mode'
-* **Cycle tooltip bind** - When pressed, ctagory displayed in tooltip is changed (Cycle tooltip mode only)
-### Colors
+* **Cycle tooltip bind** - When pressed, category displayed in tooltip is changed (Cycle tooltip mode only)
+#### Colors
 * **Current crafts color** - Color of current crafts in tooltip
 * **Favorite crafts color** - Color of favorite crafts in tooltip
 * **Future crafts color** - Color of future crafts in tooltip
 * **Current hideout upgrades color** - Color of current hideout upgrades in tooltip
 * **Future hideout upgrades color** - Color of future hideout upgrades in tooltip
 * **Barters color** - Color of barters in tooltip
-### Loose Loot
+#### Loose Loot
 * **Loose loot affix mode** - Specifies how to add the affix to loose loot names
   * **Disabled** - do nothing
   * **Prefix** - show the affix before the item name

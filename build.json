@@ -6,12 +6,15 @@
 	},
 	"dest": {
 		"client": "BepInEx/plugins/WishlistExtended/",
-		"server": "SPT/user/mods/WishlistExtended/"
+		"server": "SPT/user/mods/WishlistExtended/",
+		"root": ""
 	},
 	"files": {
 		"WishlistExtendedServer/bin/Release/net9.0/WishlistExtended-Server.dll": "server",
 		"WishlistExtendedClient/bin/Release/netstandard2.1/WishlistExtended-Client.dll": "client",
-		"WishlistExtendedClient/locales": "client"
+		"WishlistExtendedClient/locales": "client",
+		"LICENSE": "root",
+		"README.md": "root"
 	},
 	"ignore": [
 		"**/*.md"
